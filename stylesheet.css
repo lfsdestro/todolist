@@ -154,6 +154,10 @@ p {
     justify-content: center;
 }
 
+.titulo{
+    width: 100%;
+}
+
 .botao_del_todos, .input{
     width: 80%;
     justify-content: center;
