@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #9C9C9C;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.caixa {
+    width: 450px;
+    height: 550px;
+    background: black;
+    border-radius: 10px;
+}
+
+.lista_atividades {
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    background-color: #9C9C9C;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.input {
+    width: 320px;
+    height: 50px;
+    background-color: rgb(216, 215, 215);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 10px;
+    color: #9C9C9C;
+}
+
+.erro {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+.atividade {
+    width: 350px;
+    background-color: rgb(216, 215, 215);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tags */
+
+p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+/* Botões */
+
+.botao_adc {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(216, 215, 215);
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botao_del_todos {
+    width: 380px;
+    height: 50px;
+    background-color: #13293D;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    margin-left: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.botao_del{
+    background-color:#13293D;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Paletas */ 
+.paletas_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.paleta {
+    border-radius: 2rem;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+#paleta1 {
+    background-color: darkcyan;
+}
+
+#paleta2 {
+    background-color: darkblue;
+}
+
+#paleta3 {
+    background-color: darkred;
+}
+
+@media (max-width: 600px){
+.container{
+    width: 100%;
+    justify-content: center;
+}
+
+.botao_del_todos, .input{
+    width: 80%;
+    justify-content: center;
+}
+
+.lista_atividades{
+    width: 80%;
+    justify-content: center;
+}
+
+.input{
+    width: 64%;
+    justify-content: center;
+    display: block;
+}
+
+}
